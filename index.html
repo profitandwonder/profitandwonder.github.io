@@ -3,28 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marketing In 3D</title>
-  <meta name="description" content="All things marketing, made easy to see. Marketing In 3D explains marketing with 3D motion graphics, in quick Shorts and longer videos on YouTube. Every fact has a source.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=3">
+  <title>Profit and Wonder</title>
+  <meta name="description" content="Why does that cost so much? How did they get so big? Profit and Wonder takes one true story about money, companies or the things we buy, and makes it easy to see. On YouTube.">
+  <meta property="og:title" content="Profit and Wonder">
+  <meta property="og:description" content="One true story about money, companies or the things we buy, made easy to see.">
+  <meta property="og:image" content="https://profitandwonder.github.io/media/share.jpg">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-  <div class="backdrop" aria-hidden="true"></div>
-
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect x="2" y="4" width="28" height="6" rx="3" fill="#8b6cff"/>
-          <rect x="7" y="13" width="18" height="6" rx="3" fill="#5ee7ff"/>
-          <rect x="12" y="22" width="8" height="6" rx="3" fill="#ff8a4c"/>
-        </svg>
-        <span>Marketing In 3D</span>
-      </a>
+      <a class="brand" href="./"><img src="media/avatar.webp" alt="" width="40" height="40"><span>Profit and Wonder</span></a>
       <nav class="nav" aria-label="Main">
         <a href="./" aria-current="page">Home</a>
         <a href="privacy.html">Privacy</a>
-        <a href="https://www.youtube.com/@marketingin3d">YouTube</a>
+        <a href="https://www.youtube.com/@profitandwonder">YouTube</a>
       </nav>
     </div>
   </header>
@@ -32,102 +27,81 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <div>
-          <p class="kicker">All things marketing · YouTube</p>
-          <h1>Marketing, made easy to see.</h1>
-          <p class="lede">How brands get your attention, set their prices and win your loyalty, and why it works on you. Built as 3D motion graphics. Every fact has a source.</p>
-          <div class="actions">
-            <a class="button" href="https://www.youtube.com/@marketingin3d">Watch on YouTube</a>
-            <a class="button ghost" href="#app">About our YouTube app</a>
-          </div>
-        </div>
+        <h1 class="wordmark"><span class="p">Profit &amp;</span> <span class="w">Wonder</span></h1>
+        <p class="lede">I wonder how business works all the time, then fall down the rabbit hole to find out. This is where I share what I find.</p>
+        <a class="button" href="https://www.youtube.com/@profitandwonder">Watch on YouTube</a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <figure class="chart"><img src="media/prop-chart.webp" alt="" width="640" height="520"></figure>
+        <figure class="you"><img src="media/prop-you.webp" alt="" width="480" height="605"></figure>
+        <figure class="factory"><img src="media/prop-factory.webp" alt="" width="1000" height="489"></figure>
+      </div>
+    </section>
 
-        <div class="funnel" role="img" aria-label="A marketing funnel made of three frosted glass layers: attention, interest, action.">
-          <video class="funnel-video" autoplay muted loop playsinline poster="media/funnel-poster.jpg" aria-hidden="true">
-            <source src="media/funnel.webm" type="video/webm">
-            <source src="media/funnel.mp4" type="video/mp4">
-          </video>
-          <span class="funnel-label l1">Attention</span>
-          <span class="funnel-label l2">Interest</span>
-          <span class="funnel-label l3">Action</span>
+    <section class="block wonder">
+      <div class="wrap">
+        <h2>Things I wonder about</h2>
+        <p class="intro">Every video starts with a question like these. Some are about giant brands, some about tiny shops, some about mistakes that cost a fortune.</p>
+        <ul class="questions">
+          <li>Why does popcorn at the cinema cost so much?</li>
+          <li>How does a free app make any money?</li>
+          <li>Who decides what a cup of coffee costs?</li>
+          <li>Why do some brands never have a sale?</li>
+          <li>How do airlines fill every seat?</li>
+          <li>What happens to the stuff nobody buys?</li>
+          <li>How did a tiny shop beat a giant?</li>
+          <li>Why is the thing I want always on the bottom shelf?</li>
+        </ul>
+        <p class="outro">If it makes me curious, it's fair game.</p>
+      </div>
+    </section>
+
+    <section class="block how">
+      <div class="wrap">
+        <h2>How the videos work</h2>
+        <div class="cols">
+          <div>
+            <h3>One true story</h3>
+            <p>Each video follows one real company, price or idea from the question to the answer. You need no business knowledge to follow it.</p>
+          </div>
+          <div>
+            <h3>Real numbers, shown in 3D</h3>
+            <p>The numbers come from published sources. 3D motion graphics let you watch the idea work instead of reading a chart.</p>
+          </div>
+          <div>
+            <h3>A bit of fun</h3>
+            <p>Business is full of strange, clever and silly choices. The videos enjoy them.</p>
+          </div>
+          <div>
+            <h3>Short and long</h3>
+            <p>Shorts give you one idea in under a minute. Longer videos tell the full story, chapter by chapter.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="block">
+    <section class="block app" id="app">
       <div class="wrap">
-        <div class="block-head">
-          <p class="kicker">What we make</p>
-          <h2>Clear lessons for people new to marketing.</h2>
-          <p>Quick Shorts show one idea in under a minute. Longer videos tell the full story, chapter by chapter.</p>
-        </div>
-        <div class="grid-3">
-          <article class="panel">
-            <span class="dot" style="--c: #8b6cff"></span>
-            <h3>Plain words</h3>
-            <p>No jargon dumps. We explain every term before we use it, so you can start from zero.</p>
-          </article>
-          <article class="panel">
-            <span class="dot" style="--c: #5ee7ff"></span>
-            <h3>Shown, not told</h3>
-            <p>Every video is a 3D motion graphic, so you can watch the idea work.</p>
-          </article>
-          <article class="panel">
-            <span class="dot" style="--c: #ff8a4c"></span>
-            <h3>Sourced facts</h3>
-            <p>We check every claim against published research before it goes on screen.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="block" id="app">
-      <div class="wrap">
-        <div class="block-head">
-          <p class="kicker">About our YouTube app</p>
-          <h2>Marketing In 3D Studio</h2>
-          <p>Marketing In 3D Studio (shown on Google sign-in as MarketingIn3D) is our own production tool. It connects to the Marketing In 3D YouTube channel through the YouTube API Services so we can publish and manage our videos. It is not offered to the public.</p>
-        </div>
-        <div class="app-facts">
-          <div class="panel">
-            <dl>
-              <div><dt>What it does</dt><dd>Uploads our finished videos, sets their titles, descriptions and tags, and reads our channel's view and audience statistics.</dd></div>
-              <div><dt>Whose data</dt><dd>Only the Marketing In 3D channel. The tool does not access other people's accounts.</dd></div>
-            </dl>
-          </div>
-          <div class="panel">
-            <dl>
-              <div><dt>Where data goes</dt><dd>Sign-in tokens and statistics stay on our own computer. We do not sell or share them.</dd></div>
-              <div><dt>More detail</dt><dd>Read our <a href="privacy.html">privacy policy</a> to see what the tool accesses and how to remove its access.</dd></div>
-            </dl>
-          </div>
-        </div>
+        <h2>About our YouTube app</h2>
+        <p class="intro">Profit and Wonder Studio (shown on Google sign-in as MarketingIn3D) is our own production tool. It connects to the Profit and Wonder YouTube channel through the YouTube API Services so we can publish and manage our videos. It is not offered to the public.</p>
+        <dl>
+          <div><dt>What it does</dt><dd>Uploads our finished videos, sets their titles, descriptions and tags, and reads our channel's view and audience statistics.</dd></div>
+          <div><dt>Whose data</dt><dd>Only the Profit and Wonder channel. The tool does not access other people's accounts.</dd></div>
+          <div><dt>Where data goes</dt><dd>Sign-in tokens and statistics stay on our own computer. We do not sell or share them.</dd></div>
+          <div><dt>More detail</dt><dd>Read our <a href="privacy.html">privacy policy</a> to see what the tool accesses and how to remove its access.</dd></div>
+        </dl>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© 2026 Marketing In 3D</span>
+      <span>© 2026 Profit and Wonder</span>
       <nav aria-label="Footer">
         <a href="privacy.html">Privacy policy</a>
-        <a href="https://www.youtube.com/@marketingin3d">YouTube</a>
+        <a href="https://www.youtube.com/@profitandwonder">YouTube</a>
       </nav>
     </div>
   </footer>
-  <script>
-    // Respect reduced motion: stop the hero loop and keep its first frame (the poster).
-    (function () {
-      var video = document.querySelector(".funnel-video");
-      var query = window.matchMedia("(prefers-reduced-motion: reduce)");
-      function apply() {
-        if (!video) return;
-        if (query.matches) { video.pause(); video.removeAttribute("autoplay"); video.currentTime = 0; }
-        else { video.play().catch(function () {}); }
-      }
-      apply();
-      if (query.addEventListener) query.addEventListener("change", apply);
-    })();
-  </script>
 </body>
 </html>
