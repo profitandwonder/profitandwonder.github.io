@@ -120,3 +120,65 @@ code { font-size: 0.9em; background: var(--peach); padding: 1px 6px; border-radi
   .brand span { display: none; }
   .how .cols, .app dl { grid-template-columns: 1fr; }
 }
+
+/* Video pages, written by `bun run site-build` (marketing-shorts repo). */
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 10; background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 8px; font-weight: 800; }
+.skip:focus { left: 8px; }
+a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+.pages { padding: 8px 0 72px; }
+.pages h1 { font-size: clamp(32px, 5.4vw, 52px); max-width: 24ch; }
+.lede-s { max-width: 62ch; margin: 14px 0 0; color: var(--muted); font-size: 18px; }
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 16px; color: var(--muted); font-weight: 800; font-size: 15px; }
+.crumbs a { color: var(--teal-deep); }
+.chip { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--mint); color: var(--ink); font-weight: 800; font-size: 14px; text-decoration: none; }
+.chip:hover, .chip[aria-current="page"] { background: var(--ink); color: var(--paper); }
+.topics { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; }
+
+/* Video cards */
+.cards { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 28px 24px; }
+.card { margin: 0; }
+.card-link { display: block; color: var(--ink); text-decoration: none; }
+.card-link:hover .card-q { color: var(--teal-deep); }
+.thumb { display: flex; justify-content: center; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 14px; background: var(--ink); }
+.thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.thumb.is-short img { width: auto; aspect-ratio: 9 / 16; }
+.card-q { font-size: 19px; line-height: 1.2; margin: 12px 0 6px; }
+.card-meta { margin: 0; color: var(--muted); font-size: 15px; }
+.latest { background: linear-gradient(90deg, var(--peach), var(--mint)); }
+.latest .intro { max-width: 62ch; margin-top: 14px; }
+
+/* One video page */
+.vpage { max-width: 820px; }
+.vpage .answer { margin-top: 20px; font-size: clamp(18px, 2vw, 20px); max-width: 66ch; }
+.player { margin: 32px 0 0; }
+.player-link, .player iframe { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 16px; overflow: hidden; background: var(--ink); }
+.player.is-short .player-link, .player.is-short iframe { max-width: 360px; aspect-ratio: 9 / 16; margin: 0 auto; }
+.player-link img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.play { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px; border-radius: 50%; background: rgba(30, 58, 64, 0.82); transition: background 0.15s; }
+.play::after { content: ""; position: absolute; left: 30px; top: 22px; border-style: solid; border-width: 16px 0 16px 26px; border-color: transparent transparent transparent var(--paper); }
+.player-link:hover .play, .player-link:focus-visible .play { background: var(--gold); }
+.player figcaption { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.player.is-short figcaption { text-align: center; }
+.player-note { font-size: 14px; }
+.transcript, .receipts, .related { margin-top: 56px; }
+.vpage h2 { font-size: clamp(26px, 3vw, 34px); margin-bottom: 8px; }
+.hint { color: var(--muted); font-size: 15px; }
+.t-chapter h3 { margin: 28px 0 10px; }
+.transcript p { display: grid; grid-template-columns: 3.4em 1fr; gap: 10px; margin: 0 0 8px; max-width: 68ch; }
+.t-chapter h3 .ts { margin-right: 8px; }
+.ts { color: var(--teal-deep); font-variant-numeric: tabular-nums; font-size: 0.9em; font-weight: 800; text-decoration: none; }
+.ts:hover { text-decoration: underline; }
+.receipts ol { padding-left: 1.4em; margin: 16px 0 0; }
+.receipts li { margin: 0 0 16px; max-width: 68ch; }
+.r-claim, .r-source, .r-links { display: block; }
+.r-claim { font-weight: 800; }
+.r-date, .r-weak { color: var(--muted); font-size: 14px; }
+.r-weak { margin-left: 8px; color: #8A5A12; }
+.r-source, .r-links { color: var(--muted); font-size: 15px; }
+.r-links a { margin-right: 12px; }
+
+@media (max-width: 720px) {
+  .transcript p { grid-template-columns: 1fr; gap: 0; }
+  .play { width: 64px; height: 64px; margin: -32px 0 0 -32px; }
+  .play::after { left: 25px; top: 18px; border-width: 14px 0 14px 22px; }
+}
